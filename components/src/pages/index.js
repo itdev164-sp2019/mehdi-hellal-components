@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -17,8 +17,8 @@ const IndexPage = () => (
     </div>
     <Address>
       
-      My Address is 123 Sleepy Hollow Road
-      <Button variant ="primary">contact me</Button>
+      My Address is 1632 53rd Street 
+      <Button variant ="primary"> Contact me</Button>
        </Address>
       
         
