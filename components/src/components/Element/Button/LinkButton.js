@@ -4,11 +4,16 @@ import {ButtonBase} from './ButtonBase'
 import styled from 'styled-components'
 
 
-const StyledButton = styled(ButtonBase)`
+/*const StyledButton = styled(ButtonBase)`
 padding: 8px;
 color: ${props => (props.variant === 'primary' ? 'blue' : 'white')};
-
 `
+*/
+
+const StyledButton = styled(ButtonBase)`
+${props => props.theme.variants.linkButton[props.variant || 'primary']};
+`
+
 
 export const LinkButton = props => <StyledButton {...props}/>
             
