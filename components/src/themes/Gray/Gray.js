@@ -5,13 +5,14 @@ const theme = {
         title: 1.25,
         copy: 1.5
     },
-    letteSpacing:{
+    letterSpacings:{
         normal: 'normal',
         tracked: '0.1em',
         tight: '-0.05em',
         mega: '0.25em'
     },
     borders: [
+        0,
         '1px solid',
         '2px solid',
         '3px solid',
