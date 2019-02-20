@@ -1,11 +1,11 @@
 import React from "react"
-//import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import{Address, Button} from "../components/Element"
-
+import{Button, IconButton, Section} from "../components/Element"
+import {Search} from 'styled-icons/feather'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -15,16 +15,12 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Address>
-      
-      My Address is 1632 53rd Street 
-      <Button variant ="primary"> Contact me</Button>
-       </Address>
-      
-        
-
-       
-   
+    <Section flex justifyContent="space-evenly" m={2}>
+      <Link to="/page-2/">Go to page 2</Link>
+      <Button variant="primary">My Custom Button!</Button>
+      <IconButton icon={<Search/>}/>
+    </Section>
+  
   </Layout>
 )
 
