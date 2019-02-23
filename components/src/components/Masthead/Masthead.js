@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { Link } from 'rebass'
 
 const Outer = styled(Box)`
-height: ${prop => props.height};
+height: ${props => props.height};
 width: 100%;
 background-color: rebeccapurple;
 margin-bottom: 1.45em;
@@ -29,7 +29,7 @@ export const Masthead = ({ height, siteTitle}) =>{
     )
 }
 
-Masthead.PropTypes={
+Masthead.propTypes={
     height: PropTypes.string.isRequired,
     siteTitle: PropTypes.string
 
