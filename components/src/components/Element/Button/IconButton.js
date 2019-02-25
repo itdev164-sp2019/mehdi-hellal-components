@@ -18,7 +18,7 @@ IconButton.defaultProps = {
     size:24
  }
 
- IconButton.prototype = { 
+ IconButton.propTypes = { 
      icon: PropTypes.node.isRequired,
      variant: PropTypes.string
   }
