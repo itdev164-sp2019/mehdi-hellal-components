@@ -13,7 +13,7 @@ margin-bottom: 1.45em;
 
 const StyledLink = styled(Link)`
 color: white;
-text-textDecoration: none;
+textDecoration: none;
 `
 
 export const Masthead = ({ height, siteTitle}) =>{
