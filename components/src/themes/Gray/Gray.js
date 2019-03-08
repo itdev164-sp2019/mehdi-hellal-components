@@ -1,3 +1,19 @@
+import React from 'react'
+import mastheadImage from './images/styled-components.png'
+import { Menu, Search } from 'styled-icons/feather'
+
+
+const images = {
+    mastheadImage
+}
+
+const icons ={
+    Menu: <Menu />
+    Search: <Search />
+}
+
+
+
 const theme = {
     space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
     lineHeights: {
@@ -77,5 +93,5 @@ const variants = {
     },
 }
 
-const Gray = {...theme, defaults, variants }
-export { Gray }
+const Gray = {...theme, defaults, variants, images, icons };
+export { Gray };
