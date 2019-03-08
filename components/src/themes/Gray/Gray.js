@@ -1,4 +1,5 @@
 import React from 'react'
+import { darken } from 'polished'
 import mastheadImage from './images/styled-components.png'
 import { Menu, Search } from 'styled-icons/feather'
 
@@ -8,7 +9,7 @@ const images = {
 }
 
 const icons ={
-    Menu: <Menu />
+    Menu: <Menu />,
     Search: <Search />
 }
 
@@ -59,8 +60,18 @@ const defaults = {
         border: theme.borders[3],
         textTransform: 'uppercase',
         letterSpacing: theme.letterSpacings.tracked
+    },
+    masthead: {
+        height: '100',
+        width: '100',
+        background: theme.colors.primary.main,
+        borderBottom: theme.borders[1],
+        borderColor: darken(0.1, theme.colors.primary.main)
+    },
+    text: {
+        lineHeight: theme.lineHeights.copy
     }
-}
+};
 
 const variants = {
     button:{
