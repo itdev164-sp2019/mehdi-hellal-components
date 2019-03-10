@@ -1,2 +1,2 @@
 export {MenuButton} from './MenuButton'
-export {MenuButton} from './SearchButton' 
+export {SearchButton} from './SearchButton' 
