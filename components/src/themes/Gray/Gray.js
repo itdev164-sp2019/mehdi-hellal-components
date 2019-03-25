@@ -105,4 +105,4 @@ const variants = {
 }
 
 const Gray = {...theme, defaults, variants, images, icons };
-export { Gray };
+export { Gray }

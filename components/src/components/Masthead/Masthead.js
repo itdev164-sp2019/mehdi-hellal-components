@@ -18,10 +18,10 @@ export const Masthead = ({ height, children}) =>{
     return (
     <Outer height={height}>
     {children}
-    </Outer>        
-    )     
+    </Outer> )       
+       
     
-}
+};
 
 Masthead.propTypes={
     height: PropTypes.string.isRequired,
