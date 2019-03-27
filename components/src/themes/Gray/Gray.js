@@ -13,7 +13,7 @@ const icons ={
     Search: <Search />
 }
 
-
+const breakpoints = [567, 768, 900]
 
 const theme = {
     space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
@@ -50,6 +50,14 @@ const theme = {
             secondary: 'hsl(208, 13%, 45%)',
             disabled: 'hsl(208, 13%, 75%)',
             hint: 'hsl(208, 13%, 75%)'
+        }
+    },
+    media:{
+        sizes: {
+            desktop: breakpoints[2],
+            tablet: breakpoints[1],
+            phone: breakpoints[0]
+
         }
     }
 }
