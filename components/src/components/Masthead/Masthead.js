@@ -9,19 +9,21 @@ height: ${props => props.height};
 width: 100%;
 position: fixed;
 top: 0px;
-z-index:9999;
-`;
+z-index: 9999;
+`
 
 
 
-export const Masthead = ({ height, children}) =>{
+export const Masthead = ({ height, children}) =>
+{
     return (
     <Outer height={height}>
     {children}
-    </Outer> )       
+    </Outer>
+     )       
        
     
-};
+}
 
 Masthead.propTypes={
     height: PropTypes.string.isRequired,
