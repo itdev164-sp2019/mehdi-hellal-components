@@ -16,6 +16,7 @@ const icons ={
 const breakpoints = [567, 768, 900]
 
 const theme = {
+    breakpoints: [...breakpoints],
     space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
     lineHeights: {
         solid: 1,
@@ -59,6 +60,11 @@ const theme = {
             phone: breakpoints[0]
 
         }
+    },
+    transitions:{
+        short: 'all 0.3s ease-out',
+        medium: 'all 0.6s ease-out',
+        long: 'all 0.9s ease-out'
     }
 }
 
@@ -73,8 +79,8 @@ const defaults = {
         textDecoration: 'none'
     },
     masthead: {
-        height: '100',
-        width: '100',
+        height: '100%',
+        width: '100%',
         background: theme.colors.primary.main,
         borderBottom: theme.borders[1],
         borderColor: darken(0.1, theme.colors.primary.main)
@@ -82,7 +88,7 @@ const defaults = {
     text: {
         lineHeight: theme.lineHeights.copy
     }
-};
+}
 
 const variants = {
     button:{
@@ -123,7 +129,27 @@ const variants = {
             color: theme.colors.primary.contrastText
         }
     },
+   
+    mastheadDrawer:{
+        primary:{
+            background: theme.colors.primary.main
+        },
+        contrast: {
+            background: theme.colors.primary.contrastText
+        }
+    },
+    
+    text: {
+        primary: {
+          ...defaults.text,
+          color: theme.colors.text.primary
+        },
+        contrast: {
+          ...defaults.text,
+          color: theme.colors.primary.contrastText
+        }
+      }
 }
 
-const Gray = {...theme, defaults, variants, images, icons };
+const Gray = {...theme, defaults, variants, images, icons }
 export { Gray }

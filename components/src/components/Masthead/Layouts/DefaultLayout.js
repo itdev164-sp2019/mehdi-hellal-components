@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {MenuButton, SearchButton} from '../../Buttons'
-import { BaseContainer, Link, Header, Section, Button, Image} from '../../Element'
+import { Link, Header, Section, Button, Image, Nav} from '../../Element'
 import { MediaQuery } from '../../MediaQuery'
 
 const StyledHeader = styled(Header)`
@@ -17,7 +17,7 @@ Item.defaultProps ={
     mr: 3
 }
 
-const Nav = props => <BaseContainer as ="nav" {...props} />
+//const Nav = props => <BaseContainer as ="nav" {...props} />
 
 export const DefaultLayout = ({ image }) => (
     <StyledHeader flex alignItems="center" p={3}>
