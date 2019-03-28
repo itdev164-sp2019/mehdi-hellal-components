@@ -105,7 +105,7 @@ const variants = {
     },
     iconButton:{
         primary:{
-            color: theme.colors.primary.main
+            color: theme.colors.primary.contrastText
         },
         contrast:{
             color: theme.colors.primary.contrastText

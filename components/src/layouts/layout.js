@@ -53,7 +53,7 @@ export default class Layout extends React.Component{
 
   checkScrollPosition(){
     let offset = 100
-    let {drawOpen } = this.state
+    let {drawerOpen } = this.state
     let scrolledDown = window.scrollY >this.prevScrollPosition
 
     scrolledDown && window.scrollY > offset
