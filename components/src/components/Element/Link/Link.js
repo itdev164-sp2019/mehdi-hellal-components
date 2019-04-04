@@ -1,4 +1,5 @@
-import React from 'react'
+// @flow
+import * as React from 'react'
 import PropTypes from 'prop-types'
 import { Link as BaseLink } from 'rebass'
 import styled from 'styled-components'
@@ -8,7 +9,7 @@ ${props => props.theme.variants.link[props.variant || 'primary']};
 `
 
 
-export const Link = ({ href, children, ...props}) => (
+export const Link = ({ href, children, ...props} : {href: string, children: React.Node, props: any}) => (
     <StyledLink href={href} {...props}>
     {children}
     </StyledLink>

@@ -1,3 +1,4 @@
+// @flow
 import React from 'react'
 import PropTypes from 'prop-types'
 import {ButtonBase} from './ButtonBase'
@@ -15,7 +16,7 @@ ${props => props.theme.variants.linkButton[props.variant || 'primary']};
 `
 
 
-export const LinkButton = props => <StyledButton {...props}/>
+export const LinkButton = (props: PropTypes.node) => <StyledButton {...props}/>
             
     LinkButton.propTypes = {
    variant: PropTypes.string
