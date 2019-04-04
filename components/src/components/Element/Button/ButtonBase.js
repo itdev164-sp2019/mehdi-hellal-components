@@ -1,4 +1,5 @@
-import React from 'react'
+// @flow
+import * as React from 'react'
 import PropTypes from 'prop-types'
 import {Button} from 'rebass'
 import styled from 'styled-components'
@@ -10,8 +11,8 @@ font-weight: normal;
 border-radius: 0;
 cursor: pointer;
 `
-
-export const ButtonBase = ({children, ...props}) => (
+// better Flow typing
+export const ButtonBase = ({children, ...props}: { children: React.Node, props: any}) => (
 <Reset {...props}>{children}</Reset>
 
 )
