@@ -95,8 +95,8 @@ const defaults = {
     },
     socialShareButton:{
         img:{
-            width:'80px',
-            height:'30px'
+            //width:'90px',
+            //height:'35px'
         }
     }
 }
