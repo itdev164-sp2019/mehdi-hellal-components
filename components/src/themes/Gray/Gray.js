@@ -5,7 +5,10 @@ import { Menu, Search } from 'styled-icons/feather'
 
 
 const images = {
-    mastheadImage
+    mastheadImage,
+    shareFacebookImage,
+    shareTwitterImage,
+    shareMoreImage
 }
 
 const icons ={
