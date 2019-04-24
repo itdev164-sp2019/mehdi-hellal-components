@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, {ThemeConsumer} from 'styled-components'
-import { BaseShareButton } from './BaseSharebutton'
+import { BaseShareButton } from './BaseShareButton'
 
 const Image = styled.img`
 ${props => props.theme.defaults.socialShareButton.img};
