@@ -37,6 +37,8 @@ export const BaseShareButton =({
 
     }
 
+    
+    // inject the addthis global variables
     useEffect(() => {
        window.addthis_config = options.config
        window.addthis_share = options.share
@@ -47,6 +49,7 @@ export const BaseShareButton =({
        }
     })
 
+    // inject the addthis script
     useEffect(() =>{
         if (document.getElementById(id)) return
 
@@ -68,15 +71,16 @@ export const BaseShareButton =({
         </a>
     )
 
-    BaseShareButton.propTypes ={
-        linkTitle: PropTypes.string.isRequired,
-        linkClassName: PropTypes.string.isRequired,
-        linkEventLabel: PropTypes.string.isRequired,
-        addThisPubId: PropTypes.string.isRequired,
-        googleAnalyticsId: PropTypes.string.isRequired,
-        contentTitle: PropTypes.string.isRequired,
-        contentImage: PropTypes.string.isRequired,
-        contentDescription: PropTypes.string.isRequired,
-        children: PropTypes.node.isRequired,
-    }
+   
+}
+BaseShareButton.propTypes ={
+    linkTitle: PropTypes.string.isRequired,
+    linkClassName: PropTypes.string.isRequired,
+    linkEventLabel: PropTypes.string.isRequired,
+    addThisPubId: PropTypes.string.isRequired,
+    googleAnalyticsId: PropTypes.string.isRequired,
+    contentTitle: PropTypes.string.isRequired,
+    contentImage: PropTypes.string.isRequired,
+    contentDescription: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
 }
